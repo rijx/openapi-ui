@@ -1,0 +1,40 @@
+{
+  "name": "openapi-ui",
+  "description": "Makes integrating a UI for your OpenAPI spec a breeze.",
+  "version": "1.0.0",
+  "main": "lib",
+  "scripts": {
+    "build": "node bin/copy-assets",
+    "check-deps": "cat package.json | node bin/check-deps",
+    "check-deps-staged": "git show :package.json | node bin/check-deps",
+    "check-eslint-config": "eslint --print-config . | eslint-config-prettier-check",
+    "eslint": "npm run check-eslint-config && eslint --ignore-path .gitignore .",
+    "eslint-staged": "npm run check-eslint-config && git diff --name-only --cached \"**/*.js\" | xargs -0 sh -c 'git show :$0 | eslint --stdin --stdin-filename $0'",
+    "lint": "npm run check-deps && npm run eslint",
+    "lint-staged": "npm run check-deps-staged && npm run eslint-staged",
+    "lint-fix": "prettier --ignore-path .gitignore --write \"**/*.{js,json,yml,yaml,scss,md}\"",
+    "test": "jest",
+    "release": "semantic-release -e ./.releaserc.js"
+  },
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "6.1.0",
+    "@semantic-release/npm": "5.1.4",
+    "conventional-changelog-eslint": "3.0.1",
+    "eslint": "5.14.1",
+    "eslint-config-prettier": "4.1.0",
+    "eslint-plugin-jest": "22.3.0",
+    "eslint-plugin-prettier": "3.0.1",
+    "jest": "24.1.0",
+    "prettier": "1.16.4",
+    "semantic-release": "15.13.3",
+    "swagger-ui": "3.20.9",
+    "swagger-ui-dist": "3.20.9",
+    "webpack": "4.29.5",
+    "webpack-cli": "3.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/rijx/openapi-ui.git"
+  },
+  "license": "MIT"
+}

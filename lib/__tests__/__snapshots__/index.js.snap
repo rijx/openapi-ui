@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OpenAPI UI generateIndex docs directory 1`] = `
+"<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=\\"utf-8\\" />
+    <title>My API Docs</title>
+    <link rel=\\"stylesheet\\" href=\\"/docs/swagger-ui.css\\" />
+    <style>
+      html {
+        box-sizing: border-box;
+        overflow: -moz-scrollbars-vertical;
+        overflow-y: scroll;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: 0;
+        background: #fafafa;
+      }
+    </style>
+  </head>
+  <body>
+    <div id=\\"app\\"></div>
+
+    <script src=\\"/docs/swagger-ui-bundle.js\\"></script>
+    <script src=\\"/docs/swagger-ui-standalone-preset.js\\"></script>
+    <script>
+      SwaggerUIBundle({
+      url: \\"https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v3.0/petstore.yaml\\",
+      dom_id: \\"#app\\",
+      deepLinking: true,
+      displayOperationId: true,
+      presets: [
+        SwaggerUIBundle.presets.apis,
+        SwaggerUIStandalonePreset.slice(1)
+      ],
+      plugins: [
+        SwaggerUIBundle.plugins.DownloadUrl
+      ],
+      layout: \\"StandaloneLayout\\"
+    });
+    </script>
+  </body>
+</html>
+"
+`;
+
+exports[`OpenAPI UI generateIndex root directory 1`] = `
+"<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=\\"utf-8\\" />
+    <title>My API Docs</title>
+    <link rel=\\"stylesheet\\" href=\\"swagger-ui.css\\" />
+    <style>
+      html {
+        box-sizing: border-box;
+        overflow: -moz-scrollbars-vertical;
+        overflow-y: scroll;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: 0;
+        background: #fafafa;
+      }
+    </style>
+  </head>
+  <body>
+    <div id=\\"app\\"></div>
+
+    <script src=\\"swagger-ui-bundle.js\\"></script>
+    <script src=\\"swagger-ui-standalone-preset.js\\"></script>
+    <script>
+      SwaggerUIBundle({
+      url: \\"https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v3.0/petstore.yaml\\",
+      dom_id: \\"#app\\",
+      deepLinking: true,
+      displayOperationId: true,
+      presets: [
+        SwaggerUIBundle.presets.apis,
+        SwaggerUIStandalonePreset.slice(1)
+      ],
+      plugins: [
+        SwaggerUIBundle.plugins.DownloadUrl
+      ],
+      layout: \\"StandaloneLayout\\"
+    });
+    </script>
+  </body>
+</html>
+"
+`;
