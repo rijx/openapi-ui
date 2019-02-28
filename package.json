@@ -3,6 +3,12 @@
   "description": "Makes integrating a UI for your OpenAPI spec a breeze.",
   "version": "1.0.2",
   "main": "lib",
+  "files": [
+    "lib",
+    "dist",
+    "views",
+    "!**/__tests__/**"
+  ],
   "scripts": {
     "build": "node bin/copy-assets",
     "check-deps": "cat package.json | node bin/check-deps",
