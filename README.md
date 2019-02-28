@@ -2,6 +2,8 @@
 
 ![build status](https://gitlab.com/rijx/openapi-ui/badges/master/build.svg?style=flat) ![test coverage](https://gitlab.com/rijx/openapi-ui/badges/master/coverage.svg?style=flat) ![npm version](https://img.shields.io/npm/v/openapi-ui.svg)
 
+Makes integrating a UI for your OpenAPI spec a breeze.
+
 ## Examples
 
 ### Express
